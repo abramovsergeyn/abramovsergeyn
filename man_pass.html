@@ -82,7 +82,7 @@
     </style>
 </head>
 <body>
-    <h1>Менеджер паролей</h1>
+    <h1>Manager passwords</h1>
     <ul id="password-list" class="password-list"></ul>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -100,8 +100,8 @@
                             <span><strong>Пароль:</strong> <span class="password" data-index="${index}">****</span></span><br>
                             <span><strong>Ссылка:</strong> <a href="${passwordItem.url}" target="_blank">${passwordItem.url}</a></span><br>
                         </div>
-                        <button class="show-password" onclick="togglePassword(${index})">Показать</button>
-                        <button onclick="deletePassword(${index})">Удалить</button>
+                        <button class="show-password" onclick="togglePassword(${index})">Показать/Скрыть</button>
+                        <button onclick="deletePassword(${index})">Удалить пароль</button>
                     `;
                     passwordList.appendChild(listItem);
                 });
